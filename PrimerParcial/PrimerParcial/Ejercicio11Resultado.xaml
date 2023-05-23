@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage
+    xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="PrimerParcial.Ejercicio11Resultado"
+    Title="Resultado de Ejercicio 1.1">
+    <ContentPage.Content>
+        <Label FontSize="16" Padding="30,24,30,0">
+            <Label.FormattedText>
+                <FormattedString>
+                    <FormattedString.Spans>
+                        <Span Text="{Binding Path=Descripcion}"/> 
+                        <Span Text="{Binding Resultado}" FontAttributes="Bold"/> <!-- Se puede omitir el parámetro Path -->
+                    </FormattedString.Spans>
+                </FormattedString>
+            </Label.FormattedText>
+        </Label>
+    </ContentPage.Content>
+</ContentPage>
+
